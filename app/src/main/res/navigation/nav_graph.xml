@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fooda.balanceapplication.fragments.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_walletFragment"
+            app:destination="@id/walletFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mainBuyFragment"
+            app:destination="@id/mainBuyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sellHistoryFragment"
+            app:destination="@id/sellHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.fooda.balanceapplication.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.fooda.balanceapplication.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.fooda.balanceapplication.fragments.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.fooda.balanceapplication.fragments.ServiceFragment"
+        android:label="ServiceFragment" >
+        <argument
+            android:name="home"
+            app:argType="com.fooda.balanceapplication.models.Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyBalanceFragment"
+        android:name="com.fooda.balanceapplication.fragments.ChargeMyAccountFragment"
+        android:label="BuyBalanceFragment" >
+        <action
+            android:id="@+id/action_buyBalanceFragment_to_mainBuyFragment"
+            app:destination="@id/mainBuyFragment" />
+        <argument
+            android:name="buyType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainBuyFragment"
+        android:name="com.fooda.balanceapplication.fragments.MainBuyFragment"
+        android:label="fragment_main_buy"
+        tools:layout="@layout/fragment_main_buy" >
+        <action
+            android:id="@+id/action_mainBuyFragment_to_buyBalanceFragment"
+            app:destination="@id/buyBalanceFragment" />
+        <argument
+            android:name="MainType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mainBuyFragment_to_mtnFragment"
+            app:destination="@id/mtnFragment" />
+        <action
+            android:id="@+id/action_mainBuyFragment_to_zainFragment"
+            app:destination="@id/zainFragment" />
+        <action
+            android:id="@+id/action_mainBuyFragment_to_sudaniFragment"
+            app:destination="@id/sudaniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zainFragment"
+        android:name="com.fooda.balanceapplication.fragments.ZainFragment"
+        android:label="fragment_zainin"
+        tools:layout="@layout/fragment_zainin" >
+        <argument
+            android:name="buyType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mtnFragment"
+        android:name="com.fooda.balanceapplication.fragments.MtnFragment"
+        android:label="fragment_mtn"
+        tools:layout="@layout/fragment_mtn" >
+        <argument
+            android:name="buyType"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/sudaniFragment"
+        android:name="com.fooda.balanceapplication.fragments.SudaniFragment"
+        android:label="fragment_sudani"
+        tools:layout="@layout/fragment_sudani" >
+        <argument
+            android:name="buyType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellHistoryFragment"
+        android:name="com.fooda.balanceapplication.fragments.SellHistoryFragment"
+        android:label="SellHistoryFragment" />
+
+
+</navigation>

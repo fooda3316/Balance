@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/container"
+    android:background="@color/darker_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/_7sdp"
+    android:orientation="vertical"
+tools:context=".fragments.MainBuyFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+        android:layout_weight="4.0"
+        android:orientation="vertical"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="5.0dip"
+
+        app:cardPreventCornerOverlap="false">
+
+
+
+    <ImageView
+        android:id="@+id/main_zain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_zain_big"
+        android:layout_margin="5.0dip"
+        android:layout_weight="4.0"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+
+     />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+        android:layout_weight="4.0"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_7sdp"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="5.0dip"
+        app:cardPreventCornerOverlap="false">
+    <ImageView
+        android:id="@+id/main_mtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/ic_mtn_big"
+
+        android:layout_weight="2.0"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+
+        />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+        android:layout_weight="4.0"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:orientation="vertical"
+        app:cardCornerRadius="12.0dip"
+        app:cardElevation="5.0dip"
+        app:cardPreventCornerOverlap="false">
+    <ImageView
+        android:id="@+id/main_sudani"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5.0dip"
+        android:src="@drawable/ic_sudani_big"
+
+        android:layout_weight="4.0"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+
+        />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Balance Application</string>
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="wallet">Wallet</string>
+    <string name="services">Services</string>
+    <string name="buy_balance">Buy balance</string>
+    <string name="send_balance">Send balance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="progress_wait">Please wait...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="app_error">App error</string>
+    <string name="dissmiss_error">Dismiss error</string>
+    <!--    logIn-->
+    <string name="empty_description">No description available.</string>
+    <string name="text_signup_or"><u>Not registered yet? Create new account</u></string>
+    <string name="text_login"><u>Already a member? Login</u></string>
+    <string name="login"> Login</string>
+    <string name="invalid_password">Password must contain at least 1 Capital Alphabet, 1 Number and 1 Special Character.</string>
+    <string name="password_length">Password must contain minimum 8 characters</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="passwords_check">Passwords do not match!</string>
+    <string name="toast_invalid_username_or_password">Invalid username or password</string>
+    <string name="email_id">Email id</string>
+    <string name="phone_id">Phone</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Signup</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="skip">Skip</string>
+    <string name="reg_new_account">New account</string>
+    <string name="validate_phone_error">Sory your Phone number is not validate</string>
+    <string name="name_id">Name</string>
+    <string name="register">Register</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_your_otp_here">Enter your OTP here</string>
+    <string name="otp_not_received">Didn’t you receive any code?</string>
+    <string name="resend_a_new_code">Resend a new code</string>
+    <string name="verify_your_number">Verify Your Number</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="phone_auth_subtitle">Please enter your phone number to verify your account</string>
+    <string name="verify">Verify</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send">send</string>
+    <string name="otp">Otp</string>
+
+    <string name="no_internet_connection">No Internet Connection. Please check your internet connection again</string>
+    <string name="timeout">Request timeout, Please make sure you have stable internet connection</string>
+    <string name="unknown_error">Sorry. There is unknown error on our end.\nPlease try again later</string>
+    <string name="empty_data">Sorry. Data not found</string>
+    <string name="phone_not_found">Sorry your phone number is not found</string>
+    <string name="phone_less_error">Sorry your phone number is less than 10</string>
+    <string name="user_info">User info</string>
+    <string name="balance">Balance </string>
+    <string name="upload_image_error">Upload image error</string>
+    <string name="upload_image_error_msg">There are an error during uploading image</string>
+    <string name="upload_image_msg">There are an error during uploading image</string>
+    <string name="upload_image">Upload an image</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="not_registred_message">You must registered in this app first !!!</string>
+    <string name="not_registred_title">Not registered</string>
+    <string name="otp_auth_subtitle">Enter the code that you are resrved it</string>
+    <string name="change_number">Change the number</string>
+    <string name="unvalidated_number">Sory your number is not correct</string>
+    <string name="inter_phone_number">Inter your phone number...</string>
+    <string name="charge_other_clint">Charge other clint</string>
+    <string name="charge_wallet">Charge my wallet</string>
+    <string name="buy_balance_error">Sorry the buying balance operation has been failed!!!</string>
+    <string name="send_balance_error">Sorry the sending balance operation has been failed!!!</string>
+
+    <string name="buy_scratch">Buy scratch</string>
+    <string name="inter_the_phone_number">Inter the phone number</string>
+    <string name="inter_amount">Inter the amount</string>
+    <string name="inter_the_secret_number">Inter the secret number</string>
+    <string name="choice_zain">Zain</string>
+    <string name="choice_mtn">Mtn</string>
+    <string name="choice_sudani">Sudani</string>
+    <string name="sell_history">Sell history</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
